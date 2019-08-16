@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".act.StepViewPagerActivity">
+    
+    <!--   <android.support.v4.view.ViewPager
+               android:id="@+id/viewPager"
+               app:layout_constraintTop_toTopOf="parent"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>-->
+    
+    <com.example.testfunction.customview.stepviewpager.StepViewPager
+            android:id="@+id/viewPager"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    
+    <com.example.testfunction.customview.TriangleStepView
+            android:id="@+id/tvTriangle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:text_padding_start="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_36"/>
+    
+    <TextView
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintTop_toBottomOf="@id/tvTriangle"
+            android:paddingStart="@dimen/dp_16"
+            android:text="House Boundary"
+            android:paddingEnd="@dimen/dp_16"
+            android:layout_height="wrap_content"/>
+    
+    <LinearLayout
+            android:id="@+id/controller"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        
+        
+        <TextView
+                android:id="@+id/stepMinus"
+                android:background="#ddd"
+                android:gravity="center"
+                android:textSize="@dimen/sp_12"
+                android:layout_width="@dimen/dp_64"
+                android:layout_height="@dimen/dp_36"/>
+        
+        <EditText
+                android:text="0"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/dp_36"
+                android:layout_marginEnd="@dimen/dp_36"
+                android:id="@+id/edit_step"
+                android:inputType="number"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"/>
+        
+        <TextView
+                android:id="@+id/stepAdd"
+                android:background="#ddd"
+                android:gravity="center"
+                android:textSize="@dimen/sp_12"
+                android:layout_width="@dimen/dp_64"
+                android:layout_height="@dimen/dp_36"/>
+    </LinearLayout>
+    
+    <TextView
+            android:id="@+id/tvReset"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="@dimen/dp_16"
+            android:text="Reset"
+            android:background="#ddd"
+            app:layout_constraintStart_toStartOf="@id/controller"
+            app:layout_constraintEnd_toEndOf="@id/controller"
+            app:layout_constraintTop_toBottomOf="@id/controller"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_36"/>
+
+</android.support.constraint.ConstraintLayout>

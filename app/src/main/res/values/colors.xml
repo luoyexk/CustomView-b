@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    
+    <color name="color_step_1">#77CD8B</color>
+    <color name="color_step_2">#95D8A5</color>
+    <color name="color_step_3">#C0E8CA</color>
+    <color name="color_step_4">#DFF3E4</color>
+    <color name="color_step_5">#EFF9F1</color>
+    
+    <color name="wave_progress">#aa30b44e</color>
+    
+    <color name="vertical_seek_bar_bg_high">#80000000</color>
+    <color name="vertical_seek_bar_bg_low">#aa000000</color>
+
+</resources>

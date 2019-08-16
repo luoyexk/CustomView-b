@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    
+    <declare-styleable name="CornerLabelView">
+        <attr name="side_length" format="dimension" />
+        <attr name="margin_lean_side" format="dimension" />
+        <attr name="bg_color" format="color" />
+        <attr name="text_color" format="color" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="position">
+            <enum name="right_top" value="0" />
+            <enum name="right_bottom" value="1" />
+            <enum name="left_bottom" value="2" />
+            <enum name="left_top" value="3" />
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="CircleCheckBox">
+        <attr name="checked" format="boolean"/>
+        <attr name="animation_duration" format="integer"/>
+        <attr name="tick_width" format="dimension"/>
+        <attr name="border_width" format="dimension"/>
+        <attr name="tick_color" format="color"/>
+        <attr name="border_color" format="color"/>
+        <attr name="background_color" format="color"/>
+        <attr name="background_color_checked" format="color"/>
+    </declare-styleable>
+    
+    <declare-styleable name="TriangleStepView">
+        <attr name="text_padding_start" format="dimension"/>
+    </declare-styleable>
+    
+    <!--贝塞尔曲线圆形进度-->
+    <declare-styleable name="WaveProgressView">
+        <attr name="wave_color" format="color"/>
+        <attr name="second_wave_color" format="color"/>
+        <attr name="wave_bg_color" format="color"/>
+        <attr name="wave_width" format="dimension"/>
+        <attr name="wave_height" format="dimension"/>
+    </declare-styleable>
+    
+</resources>
+
